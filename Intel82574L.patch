@@ -1,0 +1,16 @@
+diff -rupN Intel82574L_org.kext/Contents/Info.plist Intel82574L_mod.kext/Contents/Info.plist
+--- Intel82574L_org.kext/Contents/Info.plist	2019-01-20 12:56:29.000000000 -0200
++++ Intel82574L_mod.kext/Contents/Info.plist	2019-01-20 12:59:32.000000000 -0200
+@@ -79,10 +79,8 @@
+ 			</dict>
+ 			<key>IOClass</key>
+ 			<string>Intel82574L</string>
+-			<key>IOPCIPrimaryMatch</key>
+-			<string>0x104b8086 0x10f68086</string>
+-			<key>IOPCISecondaryMatch</key>
+-			<string>0x00008086 0x00000000</string>
++			<key>IOPCIMatch</key>
++			<string>0x10D38086 0x104b8086 0x10f68086</string>
+ 			<key>IOPCITunnelCompatible</key>
+ 			<true/>
+ 			<key>IOProviderClass</key>
